@@ -1,0 +1,82 @@
+\documentclass{IEEEcsmag}
+
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{cite}
+\usepackage{upmath}
+
+
+
+
+\jmonth{April}
+\jname{WAP WS 2019/20}
+\pubyear{2020}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+\sptitle{Universität Salzburg - Computerwissenschaften}
+
+\title{Quantencomputing und DNA-Computing}
+
+\author{Denis Holub}
+\affil{Student Bachelor Informatik}
+
+
+\markboth{Department Head}{Paper title}
+
+\begin{abstract}
+Es handelt sich um einen Paper, der folgt aus meiner Präsentation mit Fabian Nedoluha für eine Lehrveranstalltung Wissenschaftliche Arbeitstechniken und Präsentation an der Universität Salzburg im Studiengang Bachelor Informatik über Quantencomputing und DNA-Computing. 
+\end{abstract}
+
+\maketitle
+
+
+\chapterinitial{Einführung} 
+in diesen Zeiten werden die Computer, die wir kennen, zwar immer besser und schneller, doch wir nähen uns zur Grenze der Technologie von einfacher Transistoren und Darstellung von Bits mit unterschiedlichen Spannungen. In letzer Zeit sind die Begriffe wie Quantenphysik, Quantencomputer, DNA-Computer, Bio-Computer oder Androids immer mehr und mehr hörbar und lesbar. Darum möchte ich in diesem Paper versuchen zu erklären, was ein Quantencomputer oder DNA- Computer ist, wie es funktioniert, wie ist es anders von unserem Computer, den wir kennen und was wir von diesen Technologien erwarten können.
+
+
+\section{Quantencomputing}
+
+\subsection {Bit vs. Qubit}
+Unsere Computer funktionieren meisten in einem Binärsystem, das bedeutet, dass alles was ein Computer darstellt, ist im Computer nur mit  `0` oder `1` codiert. Eine solche Position, wo es gespeichert ist heißt Bit. Ein Computer kann zwar $2^{n}$ verschiedene Kombinationen für n Bits darstellen, gleichzeitig kann sich der Computer nur in einem Zustand befinden. Das ändert sich aber mit Qubits. In Quantenphysik gibt es ein Begriff Superposition, der uns ermöglicht mehrere Zustände gleichzeitig zu haben. Qubit kann sich also im Zustand `0`, `1` oder Superposition von beiden befinden, also `0` und `1` gleichtzeitig. Also wir können einen Computer haben der sich gleichzeitig in  $2^{n}$ Zuständen befindet. Ein Qubit wird nicht mit unterschiedlichen Spannungen dargestellt, sonder entweder mit einem Elektron im angeregtem Zustand oder mit einem polarisiertem Photon. Damit der Quntecomputer rechnen kann, muss man Qubits verbinden und das ermöglichen uns nur Supraleiter die eine Temperatur niedriger als 0,015 Kelvin brauchen.
+
+\subsection{Geschichte}
+Die Quantencumputers sind ziemlich jung, der erste funktionierende Computer wurde im 2016 von IBM vorgestellt, am Anfang 2017 gab es auch erste verkaufte Quantencomputer. Heuer hat der beste Quantencomputer schon mindestens 54 verbundene Qubits. Um so höher die Anzahl voin Qubits um so bessere Leistung, das stimmt aber nur, wenn die Fehlerrate sehr niedrig ist. Schon vor funktionierenden Quantencomputern gab es Algorithmen für Quantencomputern. Shor hat gezeigt, daß man eine n-stellige Zahl mit einem Quantencomputer in einerZeit, die proportional zu  $n^{3}$ ist, in Primfaktoren zerlegen kann.  \cite{article} 
+
+\subsection{Computing}
+Die Quntencomputer bringen mit sich sehr hohe Rechenleistung, und zwar darum, weil sie ganz anders die Probleme lösen. Man könnte es an einem Beispiel von Schloss und Schlüssel darstellen. Nehmen wir an, dass wie mehrere verschiendene Schlüssel haben und einen Schloss und wollen herausfinden, welcher Schlüssel der richtige ist. Normaler Computer nimmt einen Schlüssel nach dem anderen bis man den richtigen findet. Wenn wir parallel rechnen würden, könnten wir dden Schloss kopieren, bis wir die Anzahl von Schlüssel erreicht haben und dann, alle Schlüssel reingeben, das braucht aber viele Daten und Resourcen. Der Quantencomputer gibt alle Schlüssel gleichzeitig in einen Schloss. Quantencomputer können uns in Zukunft in der Forschung viel bringen, weil sie zum Beispiel die Struktur von größeren Molekülen berechnen können, wo die normale Computer nicht mehr ausreichen. Es könnte aber auch ein Gefahr sein, weil mit der Rechenleistung kann man schneller die ganze Zahlen faktorisieren und das könnte zum Durchbruch von RSA Verschlüsselung führen. \cite{book}
+
+\section{DNA-Computing}
+
+\subsection{Biocomputer}
+Biocomputer sind Computer die statt oder neben den Transistoren und unterschiedlichen Spannungen auch mit biologischem, organischem Material arbeiten. Topologisch können wir die Biocomputer auf biochemische, biomechanische und bioelektronische Computer aufteilen. Im Vergleich zu Quntencomputer, der sehr hohe Rechenleistung hat, geht es bei biologischen Computer ehe um die Datenspeicherung, und dazu wird hauptsächlich DNA verwendet, weil es wahnsinnig viele Daten speichern kann. 
+
+\subsection{Computing}
+Die Datenverarbeitung wird mit Hilfe von biologischen Systemen durchgeführt.  Die DNA kann sugar zum Programmieren verwendet werden. Bei DNA-Computer kann jeder Strang der DNA als Prozessor verwendet werden und das ermöglicht Parallelismus anwenden. Derzeit ist aber ein DNA-Computer immer noch eher an theoretischer Ebene. In Zukunft könnte man es brauchen hauptsächlich in Datenbanksystemen, es gibt schon sogar query language die sich DNAQL nennt.
+
+
+
+
+
+
+\section{CONCLUSION}
+Damit haben wir einiges gebracht zum Thema Quantencomputer und DNA-Computer. Der Hauptunterschied zu den normalne Computer liegt in der Bitdarstellung. Quantencomputer könne die Rechenleistung in zukunft noch viel ändern, wobei die DNA-Computer eher zur Datenspeicherung dienen können. Die Technologie von beiden ist sehr interesant und es wird noch spannend, wie es die Zukunft von Computerwissenschaft ändern kann. Wahrscheinlich werden aber nicht DNA-Computer oder Quantencomputer unsere PC zu Hause ersetzen.
+
+
+\begin{thebibliography}{1}
+
+\bibitem{article}
+Novak, Erich. (2007). Was Können Quantencomputer?. Mathematische Semesterberichte. 54. 31-38. 10.1007/s00591-006-0013-8. 
+
+\bibitem{book}
+Eleanor Rieffel and Wolfgang Polak. 2011. Quantum Computing: A Gentle Introduction (1st. ed.). The MIT Press.
+
+\end{thebibliography}
+
+
+
+\end{document}
+
